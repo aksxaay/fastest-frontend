@@ -1,8 +1,29 @@
 import React from "react";
+import rect66 from "../images/Rectangle-66.png";
+import rect67 from "../images/Rectangle-67.png";
+import rect68 from "../images/Rectangle-68.png";
 
 const divStyle = {
   "background-image": `url(
-    "https://images.unsplash.com/photo-1578836537282-3171d77f8632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    ${rect66}
+  )`,
+  "background-repeat": "no-repeat",
+  "background-size": "cover",
+  "background-blend-mode": "multiply",
+};
+
+const divStyle2 = {
+  "background-image": `url(
+    ${rect67}
+  )`,
+  "background-repeat": "no-repeat",
+  "background-size": "cover",
+  "background-blend-mode": "multiply",
+};
+
+const divStyle3 = {
+  "background-image": `url(
+    ${rect68}
   )`,
   "background-repeat": "no-repeat",
   "background-size": "cover",
@@ -47,7 +68,7 @@ function Hero() {
             <div className="my-auto">
               <div
                 className="mb-6 flex flex-row flex-wrap rounded-lg bg-gray-600 p-3 antialiased shadow-lg"
-                style={divStyle}
+                style={divStyle2}
               >
                 <div className="mx-14 flex flex-row flex-wrap ">
                   <div className="relative mx-16 p-16 text-left font-semibold text-gray-700 ">
@@ -69,7 +90,7 @@ function Hero() {
 
               <div
                 className="flex flex-row flex-wrap rounded-lg bg-gray-600 p-3 antialiased shadow-lg"
-                style={divStyle}
+                style={divStyle3}
               >
                 <div className="mx-12 flex flex-row flex-wrap ">
                   <div className="relative mx-16 p-16 text-left font-semibold text-gray-700 ">
